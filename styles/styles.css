@@ -1,0 +1,9 @@
+.main-navigation li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.footer li {
+    display: inline-block;
+    margin: 10px;
+}
