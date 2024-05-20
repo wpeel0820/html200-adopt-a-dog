@@ -1,0 +1,338 @@
+.hidden {
+    position: relative;
+    left: -10000px;
+    top: auto;
+}
+.hidden:focus {
+    left: 0;
+}
+body {
+    margin:0;
+    padding:0;
+}
+.header {
+    background-color: rgb(25, 65, 93);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(141, 181, 83);
+    padding: 2rem 2rem 2rem 150px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img {
+    width: 40%;
+}
+.cart {
+    display: inline-block;
+}
+.cart p {
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+}
+.cart-icon {
+    width: 25%;
+}
+.main-navigation li {
+    display: inline-block;
+    margin: 10px;
+}
+.main-navigation {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #EBEBEB;
+    padding: 0.75rem 0.75rem 0.75rem 100px;
+    font-weight: bold;
+    margin: 0px;
+}
+.main-navigation ul {
+    list-style-type: none;
+}
+.main-navigation a {
+    text-decoration: none;
+    color: rgb(25, 65, 93);
+}
+.main-navigation li {
+    display: inline-block;
+    margin: 10px
+}
+.main-navigation ul li:not(:last-child) a:after {
+    content: "/";
+    color: rgb(25, 65, 93);
+    position: absolute;
+    margin-left: 10px;
+}
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.intro img {
+    margin-right: 3rem;
+}
+.blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 5rem;
+    grid-column-gap: 3rem;
+    padding: 3rem;
+    }
+.blog img {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.blog p { 
+    grid-area: 2 / 2 / 2 / 18; 
+}
+.blog h3 { 
+    grid-area: 1 / 2 / 2 / 18; 
+}
+.blog h3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+h1 {
+    font-style: italic;
+}
+h2 {
+    display: block;
+    width: 100%;
+    color: rgb(25, 65, 93);
+}
+h3 {
+    color: rgb(25, 65, 93);
+}
+article {
+    width: 40%;
+    margin-left: 150px;
+    margin-top: 3rem;
+}
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.see-more {
+    display: block;
+    background-color: lightgray;
+    color: rgb(25, 65, 93);
+    border: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 20px auto;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    width: 20%;
+}
+.footer {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    background-color:#48494B;
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: white;
+    position: absolute;
+    width: 100%;
+}
+.footer li {
+    display: inline-block;
+    margin: 10px;
+}
+.footer ul li:not(:last-child) a:after {
+    content: "/";
+    color: white;
+    position: absolute;
+    margin-left: 10px;
+}
+.footer a {
+    color:white;
+    font-weight: bold;
+}
+.footer img{
+    width: 20%;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+    padding: 0;
+}
+.container h2 {
+    padding-left: 6rem;
+}
+.dog {
+    box-sizing: border-box;
+    flex: 0 1 20%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1.5px solid lightgray;
+    margin: 1rem;
+    padding: 1rem;
+}
+.button {
+    color:white;
+    text-decoration: none;
+    background-color: rgb(141, 181, 83);
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+    line-height: 1.2;
+}
+.checkout-button {
+    color:white;
+    text-decoration: none;
+    background-color: rgb(141, 181, 83);
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    display: block;
+    text-align: center;
+}
+.dog img {
+    width: 100%;
+    height: auto;
+}
+.dog h4 {
+    display: block;
+    width: 100%;
+}
+.dog h3 {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(25, 65, 93);
+    font-weight: bold;
+}
+input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid lightgray;
+    box-sizing: border-box;
+}
+form {
+    padding-left: 4rem;
+}
+.address-fields {
+    display: flex;
+    gap: 1rem; 
+}
+  
+.field-group {
+    display: flex;
+    flex-direction: column; 
+    flex: 2; 
+}
+.field-group label {
+    margin-bottom: 1rem;
+}
+.field-group input,
+.field-group select {
+  width: 100%; 
+  box-sizing: border-box; 
+  max-width: 300px; 
+  min-width: 150px; 
+  padding: 8px; 
+}
+.cart-dogs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+.cart-dog1 {
+    padding-right: 4rem;
+}
+.submit {
+    color:white;
+    text-decoration: none;
+    background-color: rgb(141, 181, 83);
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    display: block;
+    width: 15%;
+    text-align: center;
+}
+form p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(25, 65, 93);
+    font-weight: bold;
+}
+@media (min-width: 769px) {
+    .dog {
+        flex: 0 1 20%;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+    .intro img {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .intro-text {
+        max-width: 100%;
+    }
+
+    .dog {
+        flex: 0 1 80%;
+    }
+    .blog {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 1rem;
+        padding: 1rem;
+    }
+
+    .blog img {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .blog h3 { 
+        grid-area: 2 / 1 / 3 / 2; 
+    }
+
+    .blog p { 
+        grid-area: 3 / 1 / 4 / 2; 
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .dog {
+        flex: 0 1 100%;
+    }
+}
