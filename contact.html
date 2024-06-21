@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Forms</title>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+  </head>
+  <body>
+	<header>
+        <div class="header">
+            <div class="logo">
+                <img src="./images/adoptadog-logo.svg" alt="Adoptadog Logo">
+                <h1>Seattle's premiere dog adoption agency</h1>
+            </div>
+            <div class="cart">
+                <div class="cart-icon">
+                    <img src="./images/cart-icon.svg" alt="Shopping cart icon">
+                </div>
+                <p>$1234.56</p>
+                <a href="checkout.html" class="checkout-button">Checkout</a>
+            </div>
+        </div>
+    </header>
+    <div class="main-navigation">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dogs.html">Dogs</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+				<li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <form id="contactForm" method="GET">
+	<h2>Contact us</h2>
+      <label>First name:</label>
+        <input type="text" name="firstName">
+      
+	  <label>Last name:</label>
+        <input type="text" name="lastName">
+      
+      <label>Your email:</label>
+        <input type="email" name="applicantEmail">
+
+	  <label>Phone number:</label>
+        <input type="text" name="phoneNumber">
+
+      <label for="city">What city are you located?</label>
+        <input type="text" name="applicantCity">
+	
+	  <label>Your message</label>
+		<textarea name="message" rows="10" cols="70">Your message here...</textarea>
+        
+	<input class="submit" type="submit" value="Submit">
+    </form>
+	<footer>
+        <div class="footer">
+            <img src="./images/adoptadog-logo.svg" alt="logo with a silhouette of a dog">
+            <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>esseque invenienihil imaximu sciderum ptistiusam consequunt</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dogs.html">Dogs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="./form.js"></script>
+  </body>
+</html>
