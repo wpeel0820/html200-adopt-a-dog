@@ -39,11 +39,11 @@ content.textContent = post.content;
     article.appendChild(title);
     article.appendChild(content);
 
-    const container = document.getElementById('blog-posts-container');
+    const container = document.getElementById('blog-posts');
     container.appendChild(article);
 }
 
-function renderAllBlogPosts() {
+function generateAllBlogPosts() {
     blogPosts.forEach(post => generateBlogPost(post));
 }
-renderAllBlogPosts();
+generateAllBlogPosts();
